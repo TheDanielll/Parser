@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     # Set the starting URL and maximum number of URLs to visit
     url = 'YOURS URL'
-    max_urls =10
+    max_urls =1000
 
     # Crawl the website starting from the specified URL
     crawl(url, max_urls=max_urls)
