@@ -1,2 +1,2 @@
 # Parser
-Parse importnant content from site
+This code can help you parse important for you content from different sites you want.
