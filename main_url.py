@@ -54,8 +54,8 @@ if __name__ == "__main__":
     import argparse
 
     # Set the starting URL and maximum number of URLs to visit
-    url = 'YOUR WEBSITE'
-    max_urls =1000
+    url = 'https://www.kpi.ua/'
+    max_urls =10
 
     # Crawl the website starting from the specified URL
     crawl(url, max_urls=max_urls)
@@ -70,9 +70,9 @@ if __name__ == "__main__":
    # Save internal links in a file
     with open(f"internal_links.txt", "w") as f:
         for internal_link in internal_urls:
-            print(internal_link.strip(), file=f)
+            print(f'"{internal_link}",', file=f)
 
     # Save external links in a file
     with open(f"external_links.txt", "w") as f:
         for external_link in external_urls:
-            print(external_link.strip(), file=f)
+            print(f'"{external_link}",', file=f)
