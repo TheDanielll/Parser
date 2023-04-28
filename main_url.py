@@ -54,7 +54,7 @@ if __name__ == "__main__":
     import argparse
 
     # Set the starting URL and maximum number of URLs to visit
-    url = 'https://www.kpi.ua/'
+    url = 'YOURS URL'
     max_urls =10
 
     # Crawl the website starting from the specified URL
