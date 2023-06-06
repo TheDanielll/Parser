@@ -18,7 +18,7 @@ def get_all_website_links(url):
     # Function to extract all links on a given web page
     urls = set()
     domain_name = urlparse(url).netloc
-    soup = BeautifulSoup(requests.get(url).content, "html.parser")
+    soup = BeautifulSoup(requests.get(url).content)
     for a_tag in soup.findAll("a"):
         href = a_tag.attrs.get("href")
         if href == "" or href is None:
@@ -51,7 +51,6 @@ def crawl(url, max_urls=30):
         crawl(link, max_urls=max_urls)
 
 if __name__ == "__main__":
-    import argparse
 
     # Set the starting URL and maximum number of URLs to visit
     url = 'YOURS URL'
